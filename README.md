@@ -1,6 +1,4 @@
-# 老年认知 web 证书
-
-- umi4 antpro 做为脚手架
+# umi4 antpro 做为脚手架
 
 ## Ant Design Pro
 
