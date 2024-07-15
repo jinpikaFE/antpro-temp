@@ -18,6 +18,8 @@ const InfoCard: React.FC<{
 
   const { token } = useToken();
 
+  console.log(process.env);
+
   return (
     <div
       style={{
@@ -77,7 +79,7 @@ const InfoCard: React.FC<{
       >
         {desc}
       </div>
-      <a href={href} target="_blank" rel="noreferrer" className='text-[red]' >
+      <a href={href} target="_blank" rel="noreferrer" className="text-[red]">
         了解更多 {'>'}
       </a>
     </div>

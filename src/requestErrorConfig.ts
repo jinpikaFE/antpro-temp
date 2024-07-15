@@ -1,6 +1,8 @@
 ﻿import type { RequestOptions } from '@@/plugin-request/request';
 import type { RequestConfig } from '@umijs/max';
+import { history } from '@umijs/max';
 import { message, notification } from 'antd';
+import { storage } from './utils/Storage';
 
 // 错误处理方案： 错误类型
 enum ErrorShowType {
@@ -17,6 +19,36 @@ interface ResponseStructure {
   errorCode?: number;
   errorMessage?: string;
   showType?: ErrorShowType;
+}
+
+// ** 没有错误信息返回时，根据 status 状态码显示错误信息 **
+function getErrMsgByStatus(status: number) {
+  switch (status) {
+    case 400:
+      return '错误请求，服务器无法理解请求的格式';
+    case 401:
+      return '未授权，请求要求用户的身份认证';
+    case 403:
+      return '禁止访问';
+    case 404:
+      return '服务器无法根据客户端的请求找到资源';
+    case 405:
+      return '网络请求错误,请求方法未允许!';
+    case 408:
+      return '网络请求超时!';
+    case 500:
+      return '服务器内部错误，无法完成请求';
+    case 502:
+      return '网关错误';
+    case 503:
+      return '服务器目前无法使用（由于超载或停机维护）';
+    case 504:
+      return '网络超时!';
+    case 505:
+      return 'http版本不支持该请求!';
+    default:
+      return '未知错误';
+  }
 }
 
 /**
@@ -72,7 +104,9 @@ export const errorConfig: RequestConfig = {
       } else if (error.response) {
         // Axios 的错误
         // 请求成功发出且服务器也响应了状态码，但状态代码超出了 2xx 的范围
-        message.error(`Response status:${error.response.status}`);
+        message.error(
+          `status:${error.response.status} ${getErrMsgByStatus(error.response.status)}`,
+        );
       } else if (error.request) {
         // 请求已经成功发起，但没有收到响应
         // \`error.request\` 在浏览器中是 XMLHttpRequest 的实例，
@@ -80,7 +114,7 @@ export const errorConfig: RequestConfig = {
         message.error('None response! Please retry.');
       } else {
         // 发送请求时出了点问题
-        message.error('Request error, please retry.');
+        message.error(error);
       }
     },
   },
@@ -89,8 +123,9 @@ export const errorConfig: RequestConfig = {
   requestInterceptors: [
     (config: RequestOptions) => {
       // 拦截请求配置，进行个性化处理。
-      const url = config?.url?.concat('?token = 123');
-      return { ...config, url };
+      const token = storage.get('token');
+      if (token) (config.headers as any).Authorization = `Bearer ${token}`;
+      return { ...config };
     },
   ],
 
@@ -98,12 +133,19 @@ export const errorConfig: RequestConfig = {
   responseInterceptors: [
     (response) => {
       // 拦截响应数据，进行个性化处理
-      const { data } = response as unknown as ResponseStructure;
+      const { data }: { data: API.ApiResponse } = response as unknown as ResponseStructure;
 
-      if (data?.success === false) {
-        message.error('请求失败！');
+      if (data?.code === 453 || data?.code === 401) {
+        storage.clear();
+        history.push('/user/login');
+        return Promise.reject('登录失效，请重新登录！');
       }
-      return response;
+
+      if (data?.code === 200) {
+        return data as any;
+      }
+
+      return Promise.reject(data?.msg || '请求失败！');
     },
   ],
 };

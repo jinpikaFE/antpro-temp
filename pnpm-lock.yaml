@@ -26,6 +26,9 @@ importers:
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
+      dayjs:
+        specifier: ^1.11.11
+        version: 1.11.11
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -3903,8 +3906,8 @@ packages:
   dateformat@4.6.3:
     resolution: {integrity: sha512-2P0p0pFGzHS5EMnhdxQi7aJN+iMheud0UhG4dlE1DLAlvL8JHjJJTX/CSm4JXwV0Ka5nGk3zC5mcb5bUQUxxMA==}
 
-  dayjs@1.11.10:
-    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+  dayjs@1.11.11:
+    resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==}
 
   debug@0.7.4:
     resolution: {integrity: sha512-EohAb3+DSHSGx8carOSKJe8G0ayV5/i609OD0J2orCkuyae7SyZSz2aoLmQF2s0Pj5gITDebwPH7GFBlqOUQ1Q==}
@@ -10427,7 +10430,7 @@ snapshots:
       '@chenshuai2144/sketch-color': 1.0.9(react@18.2.0)
       antd: 4.24.15(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       lodash.tonumber: 4.0.3
       omit.js: 2.0.2
       rc-util: 5.38.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -10445,7 +10448,7 @@ snapshots:
       '@chenshuai2144/sketch-color': 1.0.9(react@18.2.0)
       antd: 5.13.2(date-fns@2.30.0)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       lodash.tonumber: 4.0.3
       omit.js: 2.0.2
       rc-util: 5.38.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -10465,7 +10468,7 @@ snapshots:
       '@umijs/use-params': 1.0.9(react@18.2.0)
       antd: 4.24.15(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       lodash.merge: 4.6.2
       omit.js: 2.0.2
       rc-field-form: 1.41.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -10485,7 +10488,7 @@ snapshots:
       '@umijs/use-params': 1.0.9(react@18.2.0)
       antd: 5.13.2(date-fns@2.30.0)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       lodash.merge: 4.6.2
       omit.js: 2.0.2
       rc-field-form: 1.41.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -10544,7 +10547,7 @@ snapshots:
       '@babel/runtime': 7.23.8
       antd: 4.24.15(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       rc-resize-observer: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-util: 4.21.1
       react: 18.2.0
@@ -10563,7 +10566,7 @@ snapshots:
       '@babel/runtime': 7.23.8
       antd: 5.13.2(date-fns@2.30.0)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       rc-resize-observer: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-util: 4.21.1
       react: 18.2.0
@@ -10623,7 +10626,7 @@ snapshots:
       '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       antd: 4.24.15(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       lodash.merge: 4.6.2
       omit.js: 2.0.2
       rc-field-form: 1.41.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -10649,7 +10652,7 @@ snapshots:
       '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       antd: 5.13.2(date-fns@2.30.0)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       lodash.merge: 4.6.2
       omit.js: 2.0.2
       rc-field-form: 1.41.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -10667,7 +10670,7 @@ snapshots:
       '@babel/runtime': 7.23.8
       antd: 4.24.15(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       lodash.merge: 4.6.2
       rc-util: 5.38.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
@@ -10682,7 +10685,7 @@ snapshots:
       '@babel/runtime': 7.23.8
       antd: 5.13.2(date-fns@2.30.0)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       lodash.merge: 4.6.2
       rc-util: 5.38.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
@@ -14181,7 +14184,7 @@ snapshots:
     dependencies:
       '@umijs/fabric': 2.14.1
       chalk: 4.1.2
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       glob: 7.2.3
       lodash: 4.17.21
       memoizee: 0.4.15
@@ -14218,11 +14221,11 @@ snapshots:
       '@tanstack/react-query-devtools': 4.36.1(@tanstack/react-query@4.36.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@umijs/bundler-utils': 4.0.89
       '@umijs/valtio': 1.0.4(@types/react@18.2.48)(react@18.2.0)
-      antd-dayjs-webpack-plugin: 1.0.6(dayjs@1.11.10)
+      antd-dayjs-webpack-plugin: 1.0.6(dayjs@1.11.11)
       axios: 0.27.2
       babel-plugin-import: 1.13.8
       babel-plugin-styled-components: 2.1.4(@babel/core@7.4.5)(styled-components@6.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       dva-core: 2.0.4(redux@4.2.1)
       dva-immer: 1.0.1(dva@2.5.0-beta.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       dva-loading: 3.0.24(dva-core@2.0.4(redux@4.2.1))
@@ -14264,11 +14267,11 @@ snapshots:
       '@tanstack/react-query-devtools': 4.36.1(@tanstack/react-query@4.36.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@umijs/bundler-utils': 4.1.1
       '@umijs/valtio': 1.0.4(@types/react@18.2.48)(react@18.2.0)
-      antd-dayjs-webpack-plugin: 1.0.6(dayjs@1.11.10)
+      antd-dayjs-webpack-plugin: 1.0.6(dayjs@1.11.11)
       axios: 0.27.2
       babel-plugin-import: 1.13.8
       babel-plugin-styled-components: 2.1.4(@babel/core@7.4.5)(styled-components@6.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       dva-core: 2.0.4(redux@4.2.1)
       dva-immer: 1.0.1(dva@2.5.0-beta.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       dva-loading: 3.0.24(dva-core@2.0.4(redux@4.2.1))
@@ -14310,11 +14313,11 @@ snapshots:
       '@tanstack/react-query-devtools': 4.36.1(@tanstack/react-query@4.36.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@umijs/bundler-utils': 4.1.1
       '@umijs/valtio': 1.0.4(@types/react@18.2.48)(react@18.2.0)
-      antd-dayjs-webpack-plugin: 1.0.6(dayjs@1.11.10)
+      antd-dayjs-webpack-plugin: 1.0.6(dayjs@1.11.11)
       axios: 0.27.2
       babel-plugin-import: 1.13.8
       babel-plugin-styled-components: 2.1.4(@babel/core@7.4.5)(styled-components@6.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       dva-core: 2.0.4(redux@4.2.1)
       dva-immer: 1.0.1(dva@2.5.0-beta.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       dva-loading: 3.0.24(dva-core@2.0.4(redux@4.2.1))
@@ -14665,7 +14668,7 @@ snapshots:
       '@babel/runtime': 7.23.8
       '@types/js-cookie': 2.2.7
       ahooks-v3-count: 1.0.0
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       intersection-observer: 0.12.2
       js-cookie: 2.2.1
       lodash: 4.17.21
@@ -14728,9 +14731,9 @@ snapshots:
 
   ansicolors@0.3.2: {}
 
-  antd-dayjs-webpack-plugin@1.0.6(dayjs@1.11.10):
+  antd-dayjs-webpack-plugin@1.0.6(dayjs@1.11.11):
     dependencies:
-      dayjs: 1.11.10
+      dayjs: 1.11.11
 
   antd-mobile-alita@2.3.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
@@ -14841,7 +14844,7 @@ snapshots:
       '@rc-component/trigger': 1.18.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
       copy-to-clipboard: 3.3.3
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       qrcode.react: 3.1.0(react@18.2.0)
       rc-cascader: 3.21.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-checkbox: 3.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -14858,7 +14861,7 @@ snapshots:
       rc-motion: 2.9.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-notification: 5.3.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-pagination: 4.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      rc-picker: 3.14.6(date-fns@2.30.0)(dayjs@1.11.10)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      rc-picker: 3.14.6(date-fns@2.30.0)(dayjs@1.11.11)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-progress: 3.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-rate: 2.12.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-resize-observer: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -16125,7 +16128,7 @@ snapshots:
 
   dateformat@4.6.3: {}
 
-  dayjs@1.11.10: {}
+  dayjs@1.11.11: {}
 
   debug@0.7.4: {}
 
@@ -21229,7 +21232,7 @@ snapshots:
       '@babel/runtime': 7.23.8
       classnames: 2.5.1
       date-fns: 2.30.0
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       moment: 2.30.1
       rc-trigger: 5.3.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       rc-util: 5.38.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -21237,7 +21240,7 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       shallowequal: 1.1.0
 
-  rc-picker@3.14.6(date-fns@2.30.0)(dayjs@1.11.10)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  rc-picker@3.14.6(date-fns@2.30.0)(dayjs@1.11.11)(moment@2.30.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.23.8
       '@rc-component/trigger': 1.18.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -21247,7 +21250,7 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
     optionalDependencies:
       date-fns: 2.30.0
-      dayjs: 1.11.10
+      dayjs: 1.11.11
       moment: 2.30.1
 
   rc-progress@3.4.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
